@@ -10,7 +10,7 @@
 </head>
 <body>
 <header>
-    <div class="header">
+    <div class="header" style="background: linear-gradient(135deg, #052e16 0%, #064e3b 100%);">
         <nav class="navigation">
             <h1>Luvoir</h1>
             <ul class="nav justify-content-end">
@@ -158,8 +158,8 @@
                 <!-- Left column -->
                 <div class="col-md-5">
                     <div class="mb-3">
-                        <label for="productID" class="form-label"><i class="bi bi-person-badge"></i> Product ID</label>
-                        <input type="text" class="form-control" id="productID" required>
+                        <label for="product-id" class="form-label"><i class="bi bi-person-badge"></i> Product ID</label>
+                        <input type="text" class="form-control" id="product-id" required>
                         <div class="invalid-feedback">Product ID is required.</div>
                         <div class="valid-feedback">Valid Product ID.</div>
                     </div>
@@ -173,9 +173,8 @@
 
                     <label>Category</label>
                     <div class="input-group mb-3">
-
                         <input type="text" class="form-control" aria-label="Text input with dropdown button">
-                        <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Select</button>
+                        <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="category" data-bs-toggle="dropdown" aria-expanded="false">Select</button>
                         <ul class="dropdown-menu dropdown-menu-end">
                             <li><a class="dropdown-item" href="#">Earrings</a></li>
                             <li><a class="dropdown-item" href="#">Necklace</a></li>
@@ -222,6 +221,8 @@
             <tr>
                 <th scope="col">CID</th>
                 <th scope="col">Full Name</th>
+                <th scope="col">NIC</th>
+                <th scope="col">Address</th>
                 <th scope="col">NIC</th>
                 <th scope="col">Address</th>
 
@@ -318,6 +319,10 @@
                             <li><a class="dropdown-item" href="#">Debit Card</a></li>
                         </ul>
                     </div>
+                    <label>
+                        Date
+                    </label>
+                    <label> 11/11/2025</label>
                 </div>
             </div>
         </div>
