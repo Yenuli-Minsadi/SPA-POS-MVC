@@ -23,14 +23,6 @@ body {
     position: fixed;
 }
 
-/*nav{*/
-/*    display: flex;*/
-/*    justify-content: center;*/
-/*    align-items: center;*/
-/*    position: relative;*/
-/*    padding-top: 1%;*/
-/*}*/
-
 .navigation h1 {
     position: absolute;
     top: 15%;
@@ -41,20 +33,22 @@ body {
     margin: 0;
 }
 
-.nav-links {
+.navigation a {
+    color: white;
+}
+.navigation a:hover {
+    color: lightsalmon;
+}
+
+.imgs {
     display: flex;
-    gap: 2.5rem;
-    list-style: none;
+    flex-direction: row;
+    justify-content: center;
 }
 
-.nav-links li a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 0.95rem;
-}
-
-.nav-links a:hover {
-    color: #C4D9FF;
+.insights-img {
+    width: 20rem;
+    height: 25rem;
 }
 
 .content-section {
@@ -68,6 +62,7 @@ body {
 h2 {
     text-align: center;
     margin-bottom: 2rem;
+    margin-top: 2rem;
 }
 
 .is-valid {
@@ -80,20 +75,29 @@ h2 {
 }
 
 #order {
-    margin-top: 2rem;
+    margin-top: 1rem;
     margin-bottom: 2rem;
     margin-left: 18rem;
-    margin-right: 5rem;
+    margin-right: 2rem;
     display: inline-block;
     vertical-align: top;
+}
+
+.billing-info {
+    max-width: 22rem;
+}
+
+.payment-info {
+    max-width: 22rem;
+    margin-top: 2rem;
 }
 
 #checkout {
     display: inline-block;
     vertical-align: top;
-    position: sticky;
-    top: 100px;
-   margin-right: 18rem ;
+    position: relative;
+    top: 18px;
+    margin-right: 18rem ;
 }
 
 #imagePreview {
@@ -113,45 +117,19 @@ h2 {
     max-height: 100%;
 }
 
-/* Footer styling */
-.footer {
-    background-color: #070F2B;
-    color: white;
-    text-align: center;
-    padding: 2rem 1rem;
-    padding-bottom: 8rem;
-}
-
-.footer p {
-    font-size: 20px;
-}
-
-.footer pre {
-    font-size: 20px;
-}
-
-.footer p.email-text {
-    font-size: 13px;
-    font-weight: 400;
+/* Checkout Card Styles */
+.checkout-row {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
-    cursor: pointer;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #495057;
 }
 
-.footer p.copyrights {
-    font-size: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.checkout-row.total {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 0.5rem;
+    padding-top: 1rem;
+    border-top: 2px solid #6c757d;
+    border-bottom: none;
 }
-
-section {
-    background-color: white;
-    position: relative;
-    width: 100%;
-    height: auto;
-    overflow-x: hidden;
-}
-
